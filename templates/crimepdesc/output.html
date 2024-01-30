@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="{% static 'nav.css' %}" >
+    <link rel="stylesheet" href="{% static 'button.css' %}" >
+    <title>Answer</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="col-md">
+                <div class="card text-center text-white  mb-3" style="background-color:#04AA6D;">
+                    <div class="card-header">
+                        <h5 class="card-title" style="color: white ; font-weight: bolder; font-family:'Courier New', Courier, monospace  ; font-size: 30px;">the given message is</h5>    
+                        <p class="answer">
+                            {% if answer == "BRSON" %}
+                                BRSON
+                            {% elif answer == "ASSAULT" %}
+                                Assault
+                            {% elif answer == "BATTERY" %}
+                                Battery
+                            {% elif answer == "BURGLARY" %}
+                                Burglary
+                            {% elif answer == "CONCEALED CARRY LICENSE VIOLATION" %}
+                                Concealed Carry License Violation
+                            {% elif answer == "CRIMINAL DAMAGE" %}
+                                Criminal Damage
+                            {% elif answer == "CRIMINAL SEXUAL ASSAULT" %}
+                                Criminal Sexual Assault
+                            {% elif answer == "CRIMINAL TRESPASS" %}
+                                Criminal Trespass
+                            {% elif answer == "DECEPTIVE PRACTICE" %}
+                                Deceptive Practice
+                            {% elif answer == "DOMESTIC VIOLENCE" %}
+                                Domestic Violence
+                            {% elif answer == "GAMBLING" %}
+                                Gambling
+                            {% elif answer == "HOMICIDE" %}
+                                Homicide
+                            {% elif answer == "HUMAN TRAFFICKING" %}
+                                Human Trafficking
+                            {% elif answer == "INTERFERENCE WITH PUBLIC OFFICER" %}
+                                Interference with Public Officer
+                            {% elif answer == "INTIMIDATION" %}
+                                Intimidation
+                            {% elif answer == "KIDNAPPING" %}
+                                Kidnapping
+                            {% elif answer == "LIQUOR LAW VIOLATION" %}
+                                Liquor Law Violation
+                            {% elif answer == "MOTOR VEHICLE THEFT" %}
+                                Motor Vehicle Theft
+                            {% elif answer == "NARCOTICS" %}
+                                Narcotics
+                            {% elif answer == "NON-CRIMINAL" %}
+                                Non-Criminal
+                            {% elif answer == "OBSCENITY" %}
+                                Obscenity
+                            {% elif answer == "OFFENSE INVOLVING CHILDREN" %}
+                                Offense Involving Children
+                            {% elif answer == "OTHER NARCOTIC VIOLATION" %}
+                                Other Narcotic Violation
+                            {% elif answer == "OTHER OFFENSE" %}
+                                Other Offense
+                            {% elif answer == "PROSTITUTION" %}
+                                Prostitution
+                            {% elif answer == "PUBLIC INDECENCY" %}
+                                Public Indecency
+                            {% elif answer == "PUBLIC PEACE VIOLATION" %}
+                                Public Peace Violation
+                            {% elif answer == "RITUALISM" %}
+                                Ritualism
+                            {% elif answer == "ROBBERY" %}
+                                Robbery
+                            {% elif answer == "SEX OFFENSE" %}
+                                Sex Offense
+                            {% elif answer == "STALKING" %}
+                                Stalking
+                            {% elif answer == "THEFT" %}
+                                Theft
+                            {% elif answer == "WEAPONS VIOLATION" %}
+                                Weapons Violation
+                            {% else %}
+                                Spam
+                            {% endif %}
+                        </p>
+                        <a href="/" class="button button4">Back</a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Main Section Start -->
+   
+</body>
+
+</html>
